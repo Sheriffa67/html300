@@ -3,8 +3,16 @@
     <div class="navbar">
         <TheNavigation />
     </div>
-    <h1>The one place for all your traveling need</h1>
-    <p>From Brazil to africa, you can find information on how to travel</p>
+
+    <div class="gallery">
+      <img src="@/assets/iguacu-falls.jpg" alt="A waterfall picture">
+      <img src="@/assets/hawaii.jpg" alt="A picture of a beach in hawaii">
+      <img src="@/assets/brazil.jpg" alt="A picture from Brazil">
+      <img src="@/assets/jamaica.jpg" alt="A picture from Jamaica">
+      <img src="@/assets/panama-city.jpg" alt="A picture of panama city">
+      <img src="@/assets/waikiki-beach.jpg" alt="A picture of waikiki beach">
+
+    </div>
 
     <footer>
       <TheNavigation />
@@ -23,20 +31,11 @@ export default {
   components: {
     TheNavigation
   },
-  // components: {
-  //   TheBlog
-  // }
-
-//  data: function () {
-//    return {
-//      pics: [
-//        {url: require('assets/brazil.jpg'), alt: 'Picture of Brazil'},
-//        {url: require('assets/hawaii.jpg'), alt: 'picture of hawaii'},
-//        {url: require('assets/jamaica.jpg'), alt: 'picture of jamaica'},
-//        {url: require('assets/panama.jpg'), alt: 'picture of panama'},
-//      ]
-//    }
-//  }
+  data() {
+    return {
+      countries: ['Brazil', 'Hawaii', 'Jamaica', 'Panama']
+    }
+  }
 };
 
 </script>
