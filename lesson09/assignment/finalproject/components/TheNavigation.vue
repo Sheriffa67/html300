@@ -1,6 +1,6 @@
 <template>
   <nav id="nav">
-    <h4>Let's Travel</h4>
+    <h1>{{title}}</h1>
     <ul>
       <li><nuxt-link to="/">Home</nuxt-link></li>
       <li><nuxt-link to="/brazil">Brazil</nuxt-link></li>
@@ -11,6 +11,25 @@
   </nav>
 
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        title: 'Lets Travel!'
+      }
+    },
+    head () {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: 'My custom description' }
+      ]
+    }
+  }
+}
+</script>
 
 <style scoped>
  #nav {
