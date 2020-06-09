@@ -15,10 +15,11 @@
     </div>
 
     <div class="mustVisit">
-      <h3>Places in Panama that is a Must to visit</h3>
+      <h3>Awesome Restaurent in Panama</h3>
       <ul>
         <li v-for="awesomerestaurant in restaurant">{{awesomerestaurant}}</li>
       </ul>
+      <h3>Awesome Beaches in Panama</h3>
       <ul>
         <li v-for="bestbeaches in beaches">{{bestbeaches}}</li>
       </ul>
